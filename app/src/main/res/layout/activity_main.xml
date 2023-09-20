@@ -1,28 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/myedittext"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:hint="@string/hinttext"
+        android:text="@string/editmessage" />
 
     <TextView
-        android:layout_width="92dp"
-        android:layout_height="48dp"
-        android:text="@string/hello_message"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
+        android:id="@+id/mytextview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:text="@string/button_message"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="12dp"
+        android:text="@string/hello_message" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/mybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/button_message" />
+
+    <Switch
+        android:id="@+id/myswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/parameter" />
+    <RadioButton
+        android:id="@+id/myradiobutton"
+        android:layout_width="174dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/parameter" />
+
+    <CheckBox
+        android:id="@+id/mycheckbox"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/parameter" />
+
+    <ImageView
+        android:id="@+id/myimageview"
+        android:layout_width="322dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/logo_algonquin" />
+
+    <ImageButton
+        android:id="@+id/myimagebutton"
+        android:layout_width="246dp"
+        android:layout_height="90dp"
+        android:contentDescription="imgbtn"
+        app:srcCompat="@drawable/logo_algonquin" />
+
+</LinearLayout>

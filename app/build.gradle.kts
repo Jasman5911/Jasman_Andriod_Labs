@@ -4,8 +4,11 @@ plugins {
 
 android {
     namespace = "algonquin.cst2335.sing1693"
-    compileSdk = 33
+    compileSdk = 34
 
+    buildFeatures{
+        viewBinding=true
+    }
     defaultConfig {
         applicationId = "algonquin.cst2335.sing1693"
         minSdk = 22
@@ -30,8 +33,9 @@ android {
 
 dependencies {
 
+    implementation ("androidx.recyclerview:recyclerview:1.3.2")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.8.0")
+    implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

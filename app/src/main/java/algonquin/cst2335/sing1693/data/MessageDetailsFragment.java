@@ -1,6 +1,5 @@
 package algonquin.cst2335.sing1693.data;
 
-import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
